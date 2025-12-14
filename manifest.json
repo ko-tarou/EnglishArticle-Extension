@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "English Article Extension",
+  "version": "1.0.0",
+  "description": "Webページ上の日本語テキストを指定した割合で英語に翻訳するChrome拡張機能",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+

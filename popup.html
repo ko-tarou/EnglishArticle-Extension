@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Article Extension</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>English Article Extension</h1>
+    
+    <div class="section">
+      <label for="apiKey">Gemini API Key <span class="required">*</span></label>
+      <input type="password" id="apiKey" placeholder="Enter your Gemini API Key" />
+      <p class="hint">Get your API key from <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a></p>
+    </div>
+
+    <div class="section">
+      <label for="translationRatio">翻訳割合: <span id="ratioValue">50</span>%</label>
+      <input type="range" id="translationRatio" min="0" max="100" value="50" />
+      <div class="range-labels">
+        <span>0%</span>
+        <span>100%</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <button id="saveBtn" class="btn btn-primary">保存</button>
+      <button id="translateBtn" class="btn btn-secondary">翻訳を開始</button>
+    </div>
+
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
