@@ -1,4 +1,4 @@
-# English Article Extension
+# [English Article Extension](https://chromewebstore.google.com/detail/english-article-extension/pphhahildjodcahphkiphpimnbbnapep)
 
 Webページ上の日本語テキストを指定した割合でGoogle Gemini APIを使用して英語に翻訳するChrome拡張機能です。
 
